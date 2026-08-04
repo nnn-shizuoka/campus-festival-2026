@@ -334,9 +334,9 @@ main {
 /* 場所を示す部屋バッジ（部屋ごとに色が分かれて視認性バツグン） */
 .room-badge {
     display: inline-block;
-    padding: 2px 10px;
+    padding: 5px 14px;   
     border-radius: 12px;
-    font-size: 0.8rem;
+    font-size: 0.95rem; 
     font-weight: bold;
     color: #FFFFFF;
 }
@@ -427,6 +427,27 @@ main {
 .margin-top {
     margin-top: 40px;
 }
+
+
+/* 画像枠を基準位置に設定 */
+.item-img-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+/* 画像の上にバッジを絶対配置（右上固定） */
+.item-img-wrapper .room-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+    font-size: 0.95rem;   /* 文字の大きさ（元は 0.8rem ） */
+    padding: 5px 14px;    /* 上下・左右の余白（元は 2px 10px ） */
+}
+
 
 /* 6. FAQ */
 .faq-container {
