@@ -113,7 +113,7 @@ main {
 }
 
 .section-content {
-    padding: 60px 20px 20px 20px;
+    padding: 20px;
     margin-bottom: 40px;
 }
 
@@ -681,4 +681,46 @@ main {
     .hero-title h1 {
         font-size: 1.8rem;
     }
+}
+
+
+/* Stamp Rally Styles */
+.stamp-section {
+    background-color: #2c1a04;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    border: 2px solid #d4af37;
+    border-radius: 20px;
+}
+
+.stamp-header {
+    font-family: "Cinzel", serif;
+    letter-spacing: 0.14em;
+    margin: 0;
+}
+.stamp-title {
+    font-size: 25px;
+    color: #d4af37;
+    margin: 0;
+}
+.stamp-subtitle {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.stamp-button {
+    background-color: #f4ecd8;
+    border: 1px solid #d4af37;
+    border-radius: 15px;
+    padding: 12px 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.stamp-button a {
+    font-family: "Shippori Mincho", serif;
+    color: #4a3319;
+    text-decoration: none;
 }
