@@ -4,8 +4,496 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2026年度 静岡キャンパス 特設サイト</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <canvas id="sparkle-canvas"></canvas>
+
+    <header class="site-header">
+        <div class="header-logo">静岡キャンフェス2026</div>
+        
+        <button class="hamburger" id="js-hamburger" aria-label="メニューを開く">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-menu" id="js-nav">
+            <ul>
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#info">概要</a></li>
+                <li><a href="#schedule">スケジュール</a></li>
+                <li><a href="#food-goods">飲食物 & 販売物</a></li>
+                <li><a href="#events">企画紹介</a></li>
+                <li><a href="#faq">Q & A</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section-hero">
+            <div class="hero-visual">
+                <img src="image/N高.jpg" alt="フェスティバルメインビジュアル" class="main-img">
+                <div class="hero-title">
+                    <h1>静岡キャンフェス2026</h1>
+                </div>
+            </div>
+            
+            <div class="quick-view">
+                <h3>📅 開催概要</h3>
+                <p>【日時】2026年9月19日（土） 
+                    <br>    10:00〜16:00
+                </p>
+                <p>【場所】N高グループ静岡キャンパス 
+                    <br>〒420-0851 静岡県静岡市葵区黒金町3 シャンソンビル 1階</p>
+            </div>
+
+            <div class="news-box">
+                <h3>✨ 最新情報</h3>
+                <ul>
+                    <li><span class="news-date">2026.07.16</span>サイト制作開始！</li>
+                    <li><span class="news-date">2026.07.20</span>寝違えた。首痛い</li>
+                    <li><span class="news-date">2026.07.25</span>首治った！もう痛くない</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="info" class="section-content">
+            <h2 class="section-title">📍 概要</h2>
+            
+            <div class="info-container">
+                <div class="info-card">
+                    <h3>🗾 会場マップ</h3>
+                    <div class="map-container" id="js-map-trigger">
+                        <img src="image/Map.png" alt="会場マップ" class="map-img">
+                        <span class="map-zoom-badge">🔍 タップで拡大</span>
+                    </div>
+                </div>
+
+                <div class="info-card info-google-map">
+                    <h3>🗺️ キャンパス周辺マップ</h3>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1979.338753509251!2d138.3844271382888!3d34.970798568766526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601a496d853134a3%3A0x972ebd066450b05f!2zTumrmOetieWtpuagoSDpnZnlsqHjgq3jg6Pjg7Pjg5HjgrnvvZzpgJrkv6HliLbpq5jmoKHjga7liLbluqbjgpLmtLvnlKjjgZfjgZ_mlrDjgZfjgYTjg43jg4Pjg4jjga7pq5jmoKE!5e1!3m2!1sja!2sjp!4v1784711279649!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">" 
+                        width="100%" 
+                        height="280" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <div class="info-card">
+                    <h3>🚆 アクセス</h3>
+                    <p>JR「静岡駅」より徒歩約3分</p>
+                    <p>静岡鉄道「新静岡駅」より徒歩約10分</p>
+                    <p>※お越しの際は公共交通機関をご利用ください。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="schedule" class="section-content">
+            <h2 class="section-title">⏰ スケジュール</h2>
+            
+            <div class="timeline-container">
+                <div class="timeline-time-header">
+                    <span class="time-badge">10:30 - 11:00</span> 開場
+                </div>
+
+                <div class="schedule-part">
+                    <h3 class="part-title">🌟 第一部</h3>
+
+                    <div class="timeline-item">
+                        <div class="item-time">11:00 ~ 11:05</div>
+                        <div class="item-body">
+                            <span class="room-badge badge-stage">ステージ</span>
+                            <h4 class="item-title">開会式</h4>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="item-time">11:05 ~ 11:25</div>
+                        <div class="item-body">
+                            <span class="room-badge badge-a">Aルーム</span>
+                            <h4 class="item-title">NSRロゴクイズ</h4>
+                            <p class="item-desc">N/S/R高にちなんで、身近な企業やサービスのロゴを当てよう！</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="item-time">11:30 ~ 11:50</div>
+                        <div class="item-body">
+                            <span class="room-badge badge-b">Bルーム</span>
+                            <h4 class="item-title">イントロドン</h4>
+                            <p class="item-desc">流れてくる曲のイントロを聞いて曲名を答えよう！歌詞を見て曲名を答えるミニゲームもあります。</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="item-time">11:55 ~ 12:05</div>
+                        <div class="item-body">
+                            <span class="room-badge badge-a">Aルーム</span>
+                            <h4 class="item-title">あるある & TikTok</h4>
+                            <p class="item-desc">生徒が編集した “キャンパスあるある動画” と “メンターが踊ったTikTok風動画” を放送します。</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="item-time">12:10 ~ 12:30</div>
+                        <div class="item-body">
+                            <span class="room-badge badge-a">Aルーム</span>
+                            <h4 class="item-title">利き飲み物選手権</h4>
+                            <p class="item-desc">いろんな飲み物を “目隠しで” 飲み比べ！味だけで当てられるのか？</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule-part">
+                    <h3 class="part-title">🌟 第二部</h3>
+
+                    <div class="timeline-item">
+                        <div class="item-time">13:10 ~ 13:25</div>
+                        <div class="item-body">
+                            <span class="room-badge badge-stage">ステージ</span>
+                            <h4 class="item-title">ゲーム大会決勝</h4>
+                            <p class="item-desc">第1部Cルームで行われていた、ゲーム大会の3位決定戦・決勝をステージで行います。</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="item-time">13:30 ~ 13:50</div>
+                        <div class="item-body">
+                            <span class="room-badge badge-b">Bルーム</span>
+                            <h4 class="item-title">イントロドン</h4>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="item-time">13:55 ~ 14:10</div>
+                        <div class="item-body">
+                            <span class="room-badge badge-a">Aルーム</span>
+                            <h4 class="item-title">なぞなぞ</h4>
+                            <p class="item-desc">大人も子どもも楽しめるなぞなぞに挑戦して、頭を動かそう。</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="item-time">14:15 ~ 14:30</div>
+                        <div class="item-body">
+                            <span class="room-badge badge-a">Aルーム</span>
+                            <h4 class="item-title">ロゴクイズ</h4>
+                            <p class="item-desc">第2部のロゴクイズは、NSRだけでなくすべてのアルファベットから出題されます。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule-part">
+                    <h3 class="part-title">🌟 第三部</h3>
+
+                    <div class="timeline-item">
+                        <div class="item-time">14:40 ~ 14:55</div>
+                        <div class="item-body">
+                            <span class="room-badge badge-a">Aルーム</span>
+                            <h4 class="item-title">利き飲み物選手権</h4>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="item-time">15:00 ~ 15:10</div>
+                        <div class="item-body">
+                            <span class="room-badge badge-a">Aルーム</span>
+                            <h4 class="item-title">Vlog放送</h4>
+                            <p class="item-desc">生徒が編集した “普段の生徒の様子がわかるVlog動画” を放送します。</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="item-time">15:15 ~ 15:35</div>
+                        <div class="item-body">
+                            <span class="room-badge badge-a">Aルーム</span>
+                            <h4 class="item-title">なぞなぞ</h4>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="item-time">15:50 ~ 16:00</div>
+                        <div class="item-body">
+                            <span class="room-badge badge-stage">ステージ</span>
+                            <h4 class="item-title">閉会式</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-time-header">
+                    <span class="time-badge">16:00</span> 閉場
+                </div>
+
+            </div>
+        </section>
+
+        <section id="food-goods" class="section-content">
+            <h2 class="section-title">🍔 飲食物 & 販売物</h2>
+            
+            <h3>🍟 フードメニュー</h3>
+            <div class="card-grid">
+                <div class="item-card">
+                    <img src="image/フランクフルト.jpg" alt="フランクフルト" class="item-img">
+                    <h4>フランクフルト１本</h4>
+                    <p class="item-price">350円</p>
+                    <p class="item-place">場所：Aルーム
+                        <br>※ゴミ箱完備
+                    </p>
+                </div>
+                <div class="item-card">
+                    <img src="placeholder-food2.jpg" alt="タピオカ" class="item-img">
+                    <h4>もちもちタピオカミルクティー</h4>
+                    <p class="item-price">350円</p>
+                    <p class="item-place">場所：Aルーム</p>
+                </div>
+            </div>
+
+            <h3 class="margin-top">🎨 オリジナルグッズ</h3>
+            <div class="card-grid">
+                <div class="item-card">
+                    <img src="placeholder-goods1.jpg" alt="アクスタ" class="item-img">
+                    <h4>メンターアクリルスタンド</h4>
+                    <p class="item-price">500円</p>
+                    <p class="item-place">場所：Aルーム
+                        <br>※限定20枚 / 一人二個まで </p>
+                </div>
+                <div class="item-card">
+                    <img src="placeholder-goods2.jpg" alt="素材" class="item-img">
+                    <h4>荒ぶるメンターGB素材</h4>
+                    <p class="item-price">50円</p>
+                    <p class="item-place">場所：Aルーム
+                        <br>※商業利用可</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="section-content">
+            <h2 class="section-title">🏫 企画紹介</h2>
+            <div class="card-grid">
+                <div class="item-card flex-row">
+                    <img src="image/スマブラ.png" alt="スマブラ" class="item-img">
+                    <div class="event-info">
+                        <h4>白熱！第２回スマブラ大会</h4>
+                        <p>場所：Cルーム</p>
+                        <p>キャンフェスという舞台で繰り広げられる爽快バトル！
+                            <br>決着の瞬間を見逃すな！</p>
+                    </div>
+                </div>
+                <div class="item-card flex-row">
+                    <div class="event-info">
+                        <h4>イントロドン</h4>
+                        <p>場所：Bルーム</p>
+                        <p>＊情報入り次第書き込む＊面白そう、参加したい</p>
+                    </div>
+                </div>
+                <div class="item-card flex-row">
+                    <div class="event-info">
+                        <h4>なぞなぞ</h4>
+                        <p>場所：</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="section-content">
+            <h2 class="section-title">❓ Q & A</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <p class="faq-q">Q. 上履きやスリッパは必要ですか？</p>
+                    <p class="faq-a">A. いりません、校内は外履きの靴のまま入れるようになっております。</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-q">Q. キャンパス内での写真撮影は可能でしょうか？</p>
+                    <p class="faq-a">A. たしかに</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p><a href="#" class="footer-link">📩 お問い合わせはこちら</a></p>
+        <p class="copyright">© N高グループ静岡キャンパス</p>
+    </footer>
+
+    <div id="map-modal" class="map-modal">
+        <div class="modal-content-wrapper">
+            <span class="modal-close" id="js-modal-close">&times;</span>
+            <img src="" alt="会場マップ拡大" id="js-modal-img">
+        </div>
+    </div>
+
+    <script>
+        // ==========================================
+        // 1. ヘッダー・ハンバーガーメニューの処理
+        // ==========================================
+        const hamburger = document.getElementById('js-hamburger');
+        const nav = document.getElementById('js-nav');
+        const header = document.querySelector('.site-header');
+
+        if (hamburger && nav) {
+            hamburger.addEventListener('click', (e) => {
+                e.stopPropagation();
+                hamburger.classList.toggle('is-active');
+                nav.classList.toggle('is-active');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!header.contains(e.target)) {
+                    hamburger.classList.remove('is-active');
+                    nav.classList.remove('is-active');
+                }
+            });
+        }
+
+        // ==========================================
+        // 2. 背景のキラキラCanvasアニメーション
+        // ==========================================
+        const canvas = document.getElementById('sparkle-canvas');
+        const ctx = canvas.getContext('2d');
+
+        let sparkles = [];
+        const MIN_DISTANCE = 100;    // キラキラ同士の最小距離(px)
+        const MIN_SPARKLE_SIZE = 5;  // 最小サイズ(px)
+        const MAX_SPARKLE_SIZE = 17; // 最大サイズ(px)
+
+        // Canvasサイズ調整
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            generateSparkles();
+        }
+
+        // キラキラの位置とサイズをランダム生成
+        function generateSparkles() {
+            sparkles = [];
+            const docHeight = Math.max(
+                document.body.scrollHeight, 
+                document.documentElement.scrollHeight
+            );
+            const maxAttempts = 1500;
+
+            for (let i = 0; i < maxAttempts; i++) {
+                const x = Math.random() * window.innerWidth;
+                const y = Math.random() * docHeight;
+
+                let isFarEnough = true;
+                for (const s of sparkles) {
+                    const dist = Math.hypot(s.x - x, s.y - y);
+                    if (dist < MIN_DISTANCE) {
+                        isFarEnough = false;
+                        break;
+                    }
+                }
+
+                if (isFarEnough) {
+                    sparkles.push({
+                        x: x,
+                        y: y,
+                        baseSize: MIN_SPARKLE_SIZE + Math.random() * (MAX_SPARKLE_SIZE - MIN_SPARKLE_SIZE),
+                        angle: 0
+                    });
+                }
+            }
+        }
+
+        // 完全な「線対称」の王道キラキラを描画する関数
+        function drawSparkle(x, y, size, opacity, angle) {
+            if (size <= 0 || opacity <= 0) return;
+
+            ctx.save();
+            ctx.translate(x, y);
+            ctx.rotate(angle);
+            ctx.globalAlpha = opacity;
+
+            ctx.fillStyle = '#C9A333'; // ゴールド一色
+
+            const c = size * 0.18; 
+
+            ctx.beginPath();
+            ctx.moveTo(0, -size);
+            
+            for (let i = 0; i < 4; i++) {
+                ctx.quadraticCurveTo(c, -c, size, 0);
+                ctx.rotate(Math.PI / 2);
+            }
+            
+            ctx.closePath();
+            ctx.fill();
+
+            ctx.restore();
+        }
+
+        // 描画更新処理（毎フレームスムーズに実行）
+        function render() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            const scrollY = window.scrollY;
+            const viewHeight = window.innerHeight;
+
+            sparkles.forEach(s => {
+                const viewY = s.y - scrollY;
+
+                if (viewY < -50 || viewY > viewHeight + 50) return;
+
+                const progress = 1 - (viewY / viewHeight);
+                const scale = Math.sin(progress * Math.PI); 
+
+                if (scale > 0) {
+                    const currentSize = s.baseSize * scale;
+                    const opacity = 1; // 小さくなっても濃い色を維持
+
+                    drawSparkle(s.x, viewY, currentSize, opacity, s.angle);
+                }
+            });
+
+            // 次のフレームを描画請求
+            requestAnimationFrame(render);
+        }
+
+        // ウィンドウリサイズ時のみキャンバスを再生成
+        window.addEventListener('resize', resizeCanvas);
+
+        // ページロード完了時にアニメーションを開始
+        window.addEventListener('load', () => {
+            resizeCanvas();
+            render();
+        });
+
+        // ==========================================
+        // 3. 会場マップの拡大モーダル処理
+        // ==========================================
+        document.addEventListener('DOMContentLoaded', () => {
+            const mapTrigger = document.getElementById('js-map-trigger');
+            const mapModal = document.getElementById('map-modal');
+            const modalImg = document.getElementById('js-modal-img');
+            const modalClose = document.getElementById('js-modal-close');
+
+            if (mapTrigger && mapModal) {
+                // マップタップで拡大表示
+                mapTrigger.addEventListener('click', () => {
+                    const img = mapTrigger.querySelector('img');
+                    modalImg.src = img.src;
+                    mapModal.classList.add('is-open');
+                });
+
+                // バツボタンで閉じる
+                modalClose.addEventListener('click', () => {
+                    mapModal.classList.remove('is-open');
+                });
+
+                // モーダル背景（暗い部分）タップで閉じる
+                mapModal.addEventListener('click', (e) => {
+                    if (e.target === mapModal) {
+                        mapModal.classList.remove('is-open');
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
