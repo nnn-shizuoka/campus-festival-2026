@@ -713,6 +713,13 @@ main {
     margin: 0;
 }
 
+.stamp-text {
+    font-family: "Shippori Mincho", serif;
+    color: #f4ecd8;
+    font-size: 16px;
+    margin-block: 20px 0;
+}
+
 .stamp-button {
     background-color: #f4ecd8;
     border: 1px solid #d4af37;
