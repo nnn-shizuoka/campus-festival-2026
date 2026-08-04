@@ -148,10 +148,13 @@ main {
 
 .main-img {
     width: 100%;
-    max-height: 400px;
-    object-fit: cover;
+    height: auto;           /* ★ 切り抜かずに元の画像の比率をそのまま保つ */
+    max-height: 730px;      /* ★ パソコンで縦にでかくなりすぎないよう調整（お好みで変更可） */
+    object-fit: contain;    /* ★ 画像全体が綺麗に収まるように表示 */
     border-radius: 20px;
-    background-color: #DBDBDB; /* アクセント1（ダミー色） */
+    background-color: #DBDBDB;
+    display: block;
+    margin: 0 auto;         /* 中央寄せ */
 }
 
 .hero-title h1 {
