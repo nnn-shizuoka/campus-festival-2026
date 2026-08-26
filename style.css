@@ -358,6 +358,31 @@ main {
     line-height: 1.5;
 }
 
+/* 詳細ボタン（スケジュールから企画紹介へのリンク） */
+.detail-btn {
+    margin-left: auto;
+    padding: 6px 16px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #004CA0;
+    background-color: #FFFFFF;
+    border: 2px solid #004CA0;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+
+    white-space: nowrap; 
+    flex-shrink: 0;
+}
+
+.detail-btn:hover {
+    background-color: #004CA0;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 76, 160, 0.2);
+}
+
 /* 場所を示す部屋バッジ（部屋ごとに色が分かれて視認性バツグン） */
 .room-badge {
     display: inline-block;
