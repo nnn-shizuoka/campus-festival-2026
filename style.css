@@ -448,6 +448,41 @@ main {
     box-shadow: 0 4px 6px rgba(0,0,0,0.03); /* ほんのり影をつけて浮かせる */
 }
 
+
+/* グッズ複数画像レイアウト（大小並べ） */
+.multi-img-container {
+    display: flex;
+    gap: 10px; /* 画像と画像の間の隙間 */
+}
+
+/* 左側の大きいメイン画像 */
+.multi-img-container .img-main {
+    flex: 2; /* 2の比率で幅を取る */
+    width: 100%;
+    min-width: 0; /* ★追加：枠からのはみ出しを防止 */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    background-color: #DBDBDB;
+}
+
+/* 右側の小さいサブ（別角度）画像 */
+.multi-img-container .img-sub {
+    flex: 1; /* 1の比率で幅を取る */
+    width: 100%;
+    min-width: 0; /* ★追加：枠からのはみ出しを防止 */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    background-color: #DBDBDB;
+}
+
+/* 下部追加画像用のちょっとした余白 */
+.margin-top-small {
+    margin-top: 15px;
+}
+
+
 .item-card {
     flex: 1;
     min-width: 280px;
