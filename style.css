@@ -232,6 +232,8 @@ main {
     width: 100%;
     height: auto;
     border-radius: 15px;
+    border: 2px solid #CCCCCC;
+    box-sizing: border-box;
 }
 
 /* Googleマップ枠のスタイル */
