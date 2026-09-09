@@ -306,8 +306,15 @@
         <section id="food-goods" class="section-content">
             <h2 class="section-title">🍔 飲食物 & 販売物</h2>
     
-            <h3>🍟 フードメニュー</h3>
             <p class="menu-notice">💡 ※掲載しているフードの画像は<br>  すべてイメージです。</p>
+
+            <div class="section-header-flex">
+                <h3>🍟 フードメニュー</h3>
+                <div class="place-banner room-a">
+                    <span class="place-label">売り場</span>
+                    <span class="place-room">Aルーム</span>
+                </div>
+            </div>
 
             <div class="card-grid">
                 <div class="item-card">
@@ -339,7 +346,7 @@
 
                 <div class="item-card">
                     <div class="item-img-wrapper">
-                        <img src="image/メロンソーダ.webp" alt="メロンソーダ" class="item-img">
+                        <img src="image/メロンソーダ.png" alt="メロンソーダ" class="item-img">
                     </div>
                     <h4>メロンソーダ</h4>
                     <p class="item-price">200円</p>
@@ -404,8 +411,15 @@
                     </p>
                 </div>
             </div>
+            
+            <div class="section-header-flex margin-top">
+                <h3>🎨 オリジナルグッズ</h3>
+                <div class="place-banner room-b">
+                    <span class="place-label">売り場</span>
+                    <span class="place-room">Bルーム</span>
+                </div>
+            </div>
 
-            <h3 class="margin-top">🎨 オリジナルグッズ</h3>
             <div class="card-grid">
                 <div class="item-card">
                     <div class="multi-img-container">
@@ -415,7 +429,7 @@
                     <h4>手作りロゼット</h4>
                     <p class="item-price">700円~900円</p>
                     <p class="item-place">
-                        場所：Aルーム<br>
+                        場所：Bルーム<br>
                         全8色<br>
                         ※限定19個 / 一人二個まで
                     </p>
@@ -428,7 +442,7 @@
                     <h4>シール</h4>
                     <p class="item-price">200円</p>
                     <p class="item-place">
-                        場所：Aルーム<br>
+                        場所：Bルーム<br>
                         全8色<br>
                         ※限定19個 / 一人二個まで
                     </p>
@@ -440,7 +454,7 @@
                     </div>
                     <h4>3D創作物</h4>
                 <p class="item-price">200円</p>
-                    <p class="item-place">場所：Aルーム</p>
+                    <p class="item-place">場所：Bルーム</p>
                 </div>
 
                 <div class="item-card">
@@ -449,7 +463,7 @@
                     </div>
                     <h4>おみくじ</h4>
                     <p class="item-price">100円</p>
-                    <p class="item-place">場所：Aルーム</p>
+                    <p class="item-place">場所：Bルーム</p>
                 </div>
 
                 <div class="item-card">
@@ -458,7 +472,7 @@
                     </div>
                     <h4>タロットカード</h4>
                     <p class="item-price">???円</p>
-                    <p class="item-place">場所：Aルーム</p>
+                    <p class="item-place">場所：Bルーム</p>
                 </div>
             </div>
         </section>
@@ -474,7 +488,7 @@
                     </div>
                     <div class="event-info">
                         <h4>少数派クイズ</h4>
-                        <p class="item-place">場所：Bルーム</p> <!-- 場所テキストを追加 -->
+                        <p class="item-place">場所：ステージ</p>
                         <p>
                             4択から一番選ばれなさそうな
                             <br>一つを選ぼう！全問正解を目指せ！                        
@@ -488,7 +502,7 @@
                     </div>
                     <div class="event-info">
                         <h4>ロゴクイズ</h4>
-                        <p class="item-place">場所：Aルーム</p>
+                        <p class="item-place">場所：ステージ</p>
                         <p>ロゴの一部からどの企業のロゴなのかを<br>当てるクイズ！
                             <br>
                             <br>第一部では「NSRロゴクイズ」、
@@ -507,7 +521,7 @@
                     </div>
                     <div class="event-info">
                         <h4>漢字クイズ</h4>
-                        <p class="item-place">場所：Aルーム</p>
+                        <p class="item-place">場所：ステージ</p>
                         <p>知識よりも連想力が問われる漢字クイズ！
                             <br>
                             <br>バラバラになった漢字のパーツから
@@ -526,7 +540,31 @@
                     <div class="event-info">
                         <h4>ゲーム大会</h4>
                         <p class="item-place">場所：Cルーム</p>
-                        <p>キャンフェスという舞台で繰り広げられる爽快バトル！決着の瞬間を見逃すな！</p>
+                        <p>キャンフェスという舞台で繰り広げられる<br>爽快バトル！決着の瞬間を見逃すな！</p>
+
+                        <!-- 大会詳細（折りたたみ） -->
+                        <details class="game-details">
+                            <summary class="details-summary">大会詳細</summary>
+                            <div class="details-content">
+                                <ul>
+                                    <li><strong>使用するゲームとルール</strong>
+                                        <ul>
+                                            <li>大乱闘スマッシュブラザーズSPECIAL</li>
+                                            <li>アイテムなし /<br>チャージ切りふだなし</li>
+                                            <li>7分 ストック制（３ストック）</li>
+                                            <li>ステージ：終点、戦場、小戦場、ポケモンスタジアム、ホロウバスティオン、すま村、スマッシュビルなどから話し合って決定</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>トーナメント方式<br></strong>「ダブルエリミネーション式」
+                                        <p class="sub-desc">※1回負けても即敗退とならず、敗者復活枠から優勝を目指せる方式です。</p>
+                                    </li>
+                                    <li><strong>コントローラー：</strong>貸し出しOK</li>
+                                    <li><strong>観戦：</strong>観客席あり</li>
+                                    <li><strong>お願い：</strong>手指の消毒にご協力をお願いいたします。</li>
+                                </ul>
+                            </div>
+                        </details>
+
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOgdz9priH-M1XUUPMnmNjT9_aPjLEaSXg7uGiDDHxH0c-QA/viewform" target="_blank" rel="noopener noreferrer" class="smash-btn">エントリーする</a>
                     </div>
                 </div>
@@ -537,7 +575,7 @@
                     </div>
                     <div class="event-info">
                         <h4>なぞとき</h4>
-                        <p class="item-place">場所：Bルーム</p>
+                        <p class="item-place">場所：ステージ</p>
                         <p>大人も子どもも楽しめるなぞなぞに挑戦して、頭を動かそう！</p>
                     </div>
                 </div>
@@ -548,10 +586,10 @@
                     </div>
                     <div class="event-info">
                         <h4>クイズ・テトラ</h4>
-                        <p class="item-place">場所：Aルーム</p>
+                        <p class="item-place">場所：ステージ</p>
                         <p>前半には静岡キャンパスの
                             <br>メンターに関する問題を出題！
-                            <br>後半では様々な分野から出題します。
+                            <br>後半では様々な分野から出題します！
                             <br>
                             <br>このクイズはkahoot!というアプリを使って
                             <br>お手持ちのスマホから
@@ -566,7 +604,7 @@
                     </div>
                     <div class="event-info">
                         <h4>イントロどん</h4>
-                        <p class="item-place">場所：Bルーム</p>
+                        <p class="item-place">場所：ステージ</p>
                         <p>
                             いろんなジャンルの曲を聴いて
                             <br>何の曲か当てよう！
@@ -786,6 +824,72 @@
                 mapModal.addEventListener('click', (e) => {
                     if (e.target === mapModal) {
                         mapModal.classList.remove('is-open');
+                    }
+                });
+            }
+        });
+
+        // ==========================================
+        // 4. 大会詳細（details）のスムーズな開閉アニメーション
+        // ==========================================
+        document.addEventListener('DOMContentLoaded', () => {
+            const gameDetails = document.querySelector('.game-details');
+            if (gameDetails) {
+                const summary = gameDetails.querySelector('.details-summary');
+                const content = gameDetails.querySelector('.details-content');
+
+                let isAnimating = false;
+
+                summary.addEventListener('click', (e) => {
+                    e.preventDefault(); // デフォルトのパッと開閉する動作を停止
+
+                    if (isAnimating) return;
+                    isAnimating = true;
+
+                    if (gameDetails.hasAttribute('open')) {
+                        // 【閉じるアニメーション】
+                        gameDetails.classList.remove('is-open');
+                        const startHeight = content.offsetHeight;
+
+                        const animation = content.animate([
+                            { height: `${startHeight}px`, opacity: 1 },
+                            { height: '0px', opacity: 0 }
+                        ], {
+                            duration: 320,
+                            easing: 'cubic-bezier(0.25, 1, 0.5, 1)'
+                        });
+
+                        animation.onfinish = () => {
+                            gameDetails.removeAttribute('open');
+                            content.style.height = '';
+                            content.style.opacity = '';
+                            isAnimating = false;
+                        };
+                    } else {
+                        // 【開くアニメーション】
+                        gameDetails.setAttribute('open', '');
+                        gameDetails.classList.add('is-open');
+
+                        // 開いた時の高さを一時計測
+                        content.style.height = 'auto';
+                        content.style.opacity = '1';
+                        const endHeight = content.offsetHeight;
+                        content.style.height = '0px';
+                        content.style.opacity = '0';
+
+                        const animation = content.animate([
+                            { height: '0px', opacity: 0 },
+                            { height: `${endHeight}px`, opacity: 1 }
+                        ], {
+                            duration: 320,
+                            easing: 'cubic-bezier(0.25, 1, 0.5, 1)'
+                        });
+
+                        animation.onfinish = () => {
+                            content.style.height = '';
+                            content.style.opacity = '';
+                            isAnimating = false;
+                        };
                     }
                 });
             }
