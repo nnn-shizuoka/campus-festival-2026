@@ -1035,6 +1035,30 @@ main {
 }
 
 
+@media (max-width: 410px) {
+    /* 画像を80pxから60pxに少し小さく */
+    .item-thumb {
+        width: 75px;
+        height: 75px;
+    }
+
+    /* 要素同士の隙間（gap）を小さく調整 */
+    .item-main {
+        gap: 10px;
+    }
+
+    /* タイトルの文字サイズをほんの少し調整 */
+    .item-info .item-title {
+        font-size: 1.07rem;
+    }
+
+    /* 詳細ボタンの左右余白を縮小 */
+    .detail-btn {
+        padding: 5px 10px;
+    }
+}
+
+
 /* Stamp Rally Styles */
 .stamp-section {
     background-color: #2c1a04;
