@@ -358,6 +358,50 @@ main {
     line-height: 1.5;
 }
 
+
+/* ==========================================
+   追加：スケジュール用の新規スタイル
+   ========================================== */
+
+/* 【ステージ企画】バナー */
+.stage-banner {
+    background-color: #D9383A;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 0.1em;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 4px rgba(217, 56, 58, 0.3);
+}
+
+.part-title + .stage-banner {
+    margin-top: 0;
+}
+
+/* 休憩時間の見出し（少し色を優しくする） */
+.timeline-time-header.break-time {
+    background-color: #f4ecd8;
+    border-color: #C9A333;
+    color: #4a3319;
+}
+
+.timeline-time-header.break-time .time-badge {
+    background-color: #C9A333;
+    color: #000000;
+}
+
+/* ゲーム大会の注意書き用 */
+.alert-text {
+    color: #D9383A !important;
+    font-weight: bold;
+    font-size: 0.85rem;
+    white-space: nowrap; /* 追加：改行を防ぐ */
+}
+
 /* 詳細ボタン（スケジュールから企画紹介へのリンク） */
 .detail-btn {
     margin-left: auto;
@@ -370,8 +414,7 @@ main {
     border-radius: 20px;
     text-decoration: none;
     transition: all 0.3s ease;
-    align-self: flex-start;
-
+    align-self: center; /* 変更：flex-start から center にして高さを中央（企画名）に合わせる */
     white-space: nowrap; 
     flex-shrink: 0;
 }
@@ -435,24 +478,25 @@ main {
 
 /* フードメニューの画像注意書き */
 .menu-notice {
-    display: inline-block;
+    display: block;
+    width: fit-content;
+    margin: 0 auto 20px auto;
+    text-align: center;
     background-color: #FFFFFF;
-    border: 2px solid #C9A333; /* サイトテーマのゴールド */
+    border: 2px solid #C9A333;
     color: #333333;
     padding: 8px 16px;
     border-radius: 8px;
     font-size: 0.95rem;
     font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.03); /* ほんのり影をつけて浮かせる */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.03);
 }
 
 
 /* グッズ複数画像レイアウト（大小並べ） */
 .multi-img-container {
     display: flex;
-    gap: 10px; /* 画像と画像の間の隙間 */
+    gap: 10px;
 }
 
 /* 左側の大きいメイン画像 */
@@ -545,6 +589,40 @@ main {
 
     font-size: 0.95rem;   /* 文字の大きさ（元は 0.8rem ） */
     padding: 5px 14px;    /* 上下・左右の余白（元は 2px 10px ） */
+}
+
+
+/* ==========================================
+   🎮 ゲーム大会エントリーボタン（スマブラ風）
+   ========================================== */
+.smash-btn {
+    display: block;          
+    width: fit-content;         
+    margin: 15px auto 0;        
+    padding: 10px 30px;
+    background: linear-gradient(135deg, #E60012 0%, #A2000D 100%); /* */
+    color: #FFFFFF;
+    font-family: 'Dela Gothic One', sans-serif;
+    font-weight: 900;
+    font-size: 1.7rem; 
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    box-shadow: 4px 4px 0px #000000;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    -webkit-text-stroke: 5px #000000;
+    stroke-linejoin: round;
+    paint-order: stroke fill;
+    text-shadow: 0.9px 0.9px 0px #000000, 0.4px 0.4px 0px rgba(0, 0, 0, 0.4);
+}
+
+.smash-btn:hover {
+    transform: translate(3px, 3px); /* 押し込むような動き */
+    box-shadow: 1.5px 1.5px 0px #000000; /* 影を減らして接地感を出す */
+    color: #FFFFFF;
 }
 
 

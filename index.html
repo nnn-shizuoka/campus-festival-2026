@@ -6,6 +6,7 @@
     <title>2026年度 静岡キャンパス 特設サイト</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Shippori+Mincho:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
     <link rel="shortcut icon" href="favicon/favicon.ico" />
@@ -89,7 +90,7 @@
                 <div class="info-card">
                     <h3>🗾 会場マップ</h3>
                     <div class="map-container" id="js-map-trigger">
-                        <img src="image/Map.png" alt="会場マップ" class="map-img">
+                        <img src="image/キャンパスマップ.png" alt="会場マップ" class="map-img">
                         <span class="map-zoom-badge">🔍 タップで拡大</span>
                     </div>
                 </div>
@@ -132,13 +133,14 @@
                         <span>🌟 第一部</span>
                         <span class="part-time">11:00 ~ 12:30</span>
                     </h3>
+                    
+                    <div class="stage-banner">【ステージ企画】</div>
 
                     <div class="timeline-item">
                         <div class="item-main">
-                            <img src="image/クイズ.png" alt="開会式" class="item-thumb">
+                            <img src="image/マイク.jpg" alt="開会式" class="item-thumb">
                             <div class="item-info">
                                 <h4 class="item-title">開会式</h4>
-                                <span class="room-badge badge-stage">ステージ</span>
                             </div>
                         </div>
                     </div>
@@ -148,7 +150,6 @@
                             <img src="image/少数派クイズ.png" alt="少数派ゴクイズ" class="item-thumb">
                             <div class="item-info">
                                 <h4 class="item-title">少数派クイズ</h4>
-                                <span class="room-badge badge-a">Aルーム</span>
                             </div>
                             <a href="#event-minority" class="detail-btn">詳細</a>
                         </div>
@@ -159,7 +160,6 @@
                             <img src="image/ロゴクイズ.png" alt="ロゴクイズ" class="item-thumb">
                             <div class="item-info">
                                 <h4 class="item-title">ロゴクイズ</h4>
-                                <span class="room-badge badge-a">Aルーム</span>
                             </div>
                             <a href="#event-logo" class="detail-btn">詳細</a>
                         </div>
@@ -170,11 +170,15 @@
                             <img src="image/漢字クイズ.png" alt="漢字クイズ" class="item-thumb">
                             <div class="item-info">
                                 <h4 class="item-title">漢字クイズ</h4>
-                                <span class="room-badge badge-a">Aルーム</span>
                             </div>
                         <a href="#event-kanji" class="detail-btn">詳細</a>
                         </div>
                     </div>
+                </div>
+
+                <!-- 昼休憩 -->
+                <div class="timeline-time-header break-time">
+                    <span class="time-badge">12:30 - 13:10</span> 昼休憩
                 </div>
 
                 <!-- 第二部 -->
@@ -186,21 +190,23 @@
 
                     <div class="timeline-item">
                         <div class="item-main">
-                            <img src="image/スマブラ.png" alt="ゲーム大会" class="item-thumb">
+                            <img src="image/コントローラー.jpg" alt="ゲーム大会" class="item-thumb">
                             <div class="item-info">
                                 <h4 class="item-title">ゲーム大会</h4>
-                                <span class="room-badge badge-stage">ステージ</span>
+                                <span class="room-badge badge-c">Cルーム</span>
                             </div>
                             <a href="#event-game" class="detail-btn">詳細</a>
                         </div>
+                        <p class="item-desc alert-text">※この企画はCルームにて行います</p>
                     </div>
+
+                    <div class="stage-banner">【ステージ企画】</div>
 
                     <div class="timeline-item">
                         <div class="item-main">
                             <img src="image/なぞとき.png" alt="なぞなぞ" class="item-thumb">
                             <div class="item-info">
                                 <h4 class="item-title">なぞとき</h4>
-                                <span class="room-badge badge-b">Bルーム</span>
                             </div>
                             <a href="#event-nazo" class="detail-btn">詳細</a>
                         </div>
@@ -211,7 +217,6 @@
                             <img src="image/ロゴクイズ.png" alt="ロゴクイズ" class="item-thumb">
                             <div class="item-info">
                                 <h4 class="item-title">ロゴクイズ</h4>
-                                <span class="room-badge badge-a">Aルーム</span>
                             </div>
                             <a href="#event-logo" class="detail-btn">詳細</a>
                         </div>
@@ -222,11 +227,15 @@
                             <img src="image/イントロどん.png" alt="イントロどん" class="item-thumb">
                             <div class="item-info">
                                 <h4 class="item-title">イントロどん</h4>
-                                <span class="room-badge badge-a">Aルーム</span>
                             </div>
                             <a href="#event-intro" class="detail-btn">詳細</a>
                         </div>
                     </div>
+                </div>
+
+                <!-- 休憩 -->
+                <div class="timeline-time-header break-time">
+                    <span class="time-badge">14:30 - 14:40</span> 休憩
                 </div>
 
                 <!-- 第三部 -->
@@ -236,12 +245,13 @@
                         <span class="part-time">14:40 ~ 16:00</span>
                     </h3>
 
+                    <div class="stage-banner">【ステージ企画】</div>
+
                     <div class="timeline-item">
                         <div class="item-main">
                             <img src="image/少数派クイズ.png" alt="少数派クイズ" class="item-thumb">
                             <div class="item-info">
                                 <h4 class="item-title">少数派クイズ</h4>
-                                <span class="room-badge badge-a">Aルーム</span>
                             </div>
                             <a href="#event-minority" class="detail-btn">詳細</a>
                         </div>
@@ -252,7 +262,6 @@
                             <img src="image/漢字クイズ.png" alt="漢字クイズ" class="item-thumb">
                             <div class="item-info">
                                 <h4 class="item-title">漢字クイズ</h4>
-                                <span class="room-badge badge-a">Aルーム</span>
                             </div>
                             <a href="#event-kanji" class="detail-btn">詳細</a>
                         </div>
@@ -262,8 +271,7 @@
                         <div class="item-main">
                             <img src="image/クイズ・テトラ.png" alt="クイズ・テトラ" class="item-thumb">
                             <div class="item-info">
-                                <h4 class="item-title">クイズ・テトラ</h4>
-                                <span class="room-badge badge-a">Aルーム</span>
+                                <h4 class="item-title">クイズ<br>・テトラ</h4>
                             </div>
                             <a href="#event-tetra" class="detail-btn">詳細</a>
                         </div>
@@ -274,7 +282,6 @@
                             <img src="image/イントロどん.png" alt="イントロどん" class="item-thumb">
                             <div class="item-info">
                                 <h4 class="item-title">イントロどん</h4>
-                                <span class="room-badge badge-stage">ステージ</span>
                             </div>
                             <a href="#event-intro" class="detail-btn">詳細</a>
                         </div>
@@ -282,10 +289,9 @@
 
                     <div class="timeline-item">
                         <div class="item-main">
-                            <img src="image/クイズ.png" alt="閉会式はあるのだろうか" class="item-thumb">
+                            <img src="image/マイク.jpg" alt="閉会式" class="item-thumb">
                             <div class="item-info">
-                                <h4 class="item-title">閉会式はないのだろうか</h4>
-                                <span class="room-badge badge-stage">ステージ</span>
+                                <h4 class="item-title">閉会式</h4>
                             </div>
                         </div>
                     </div>
@@ -301,13 +307,12 @@
             <h2 class="section-title">🍔 飲食物 & 販売物</h2>
     
             <h3>🍟 フードメニュー</h3>
-            <p class="menu-notice">💡 ※掲載しているフードの画像はすべてイメージです。</p>
+            <p class="menu-notice">💡 ※掲載しているフードの画像は<br>  すべてイメージです。</p>
 
             <div class="card-grid">
                 <div class="item-card">
                     <div class="item-img-wrapper">
                         <img src="image/麦茶.webp" alt="麦茶" class="item-img">
-                        <span class="room-badge badge-a">Aルーム</span>
                     </div>
                     <h4>麦茶</h4>
                     <p class="item-price">200円</p>
@@ -317,7 +322,6 @@
                 <div class="item-card">
                     <div class="item-img-wrapper">
                         <img src="image/リンゴジュース.jpg" alt="リンゴジュース" class="item-img">
-                        <span class="room-badge badge-a">Aルーム</span>
                     </div>
                     <h4>リンゴジュース</h4>
                     <p class="item-price">200円</p>
@@ -327,7 +331,6 @@
                 <div class="item-card">
                     <div class="item-img-wrapper">
                         <img src="image/カルピス.jpg" alt="カルピス" class="item-img">
-                        <span class="room-badge badge-a">Aルーム</span>
                     </div>
                     <h4>カルピス</h4>
                     <p class="item-price">200円</p>
@@ -337,7 +340,6 @@
                 <div class="item-card">
                     <div class="item-img-wrapper">
                         <img src="image/メロンソーダ.webp" alt="メロンソーダ" class="item-img">
-                        <span class="room-badge badge-a">Aルーム</span>
                     </div>
                     <h4>メロンソーダ</h4>
                     <p class="item-price">200円</p>
@@ -347,7 +349,6 @@
                 <div class="item-card">
                     <div class="item-img-wrapper">
                         <img src="image/コーラ.jpg" alt="コーラ" class="item-img">
-                        <span class="room-badge badge-a">Aルーム</span>
                     </div>
                     <h4>コーラ</h4>
                     <p class="item-price">200円</p>
@@ -357,7 +358,6 @@
                 <div class="item-card">
                     <div class="item-img-wrapper">
                         <img src="image/ポップコーン.jpeg" alt="ポップコーン" class="item-img">
-                        <span class="room-badge badge-a">Aルーム</span>
                     </div>
                     <h4>ポップコーン</h4>
                     <p class="item-price">100円</p>
@@ -367,21 +367,20 @@
                 <div class="item-card">
                     <div class="item-img-wrapper">
                         <img src="image/フランクフルト.jpg" alt="フランクフルト" class="item-img">
-                        <span class="room-badge badge-a">Aルーム</span>
                     </div>
                     <h4>フランクフルト</h4>
                     <p class="item-price">200円</p>
                     <p class="item-place">
-                        場所：Aルーム<br>
-                        ケチャップとマスタードでお楽しみいただけます！<br>
-                        ※ゴミ箱完備
+                        場所：Aルーム
+                        <br>ケチャップとマスタードで
+                        <br>お楽しみいただけます！
+                        <br>※ゴミ箱完備
                     </p>
                 </div>
 
                 <div class="item-card">
                     <div class="item-img-wrapper">
                         <img src="image/ポテト.jpg" alt="波型ポテト" class="item-img">
-                        <span class="room-badge badge-a">Aルーム</span>
                     </div>
                     <h4>ポテト</h4>
                     <p class="item-price">200円</p>
@@ -394,7 +393,6 @@
                 <div class="item-card">
                     <div class="item-img-wrapper">
                         <img src="image/ワッフル.jpg" alt="ワッフル" class="item-img">
-                        <span class="room-badge badge-a">Aルーム</span>
                     </div>
                     <h4>ワッフル</h4>
                     <p class="item-price">200円</p>
@@ -426,7 +424,6 @@
                 <div class="item-card">
                     <div class="item-img-wrapper">
                         <img src="image/シール.jpg" alt="シール" class="item-img">
-                        <span class="room-badge badge-a">Aルーム</span>
                     </div>
                     <h4>シール</h4>
                     <p class="item-price">200円</p>
@@ -440,7 +437,6 @@
                 <div class="item-card">
                     <div class="item-img-wrapper">
                         <img src="image/3D創作物.jpg" alt="3D創作物" class="item-img">
-                        <span class="room-badge badge-a">Aルーム</span>
                     </div>
                     <h4>3D創作物</h4>
                 <p class="item-price">200円</p>
@@ -450,7 +446,6 @@
                 <div class="item-card">
                     <div class="item-img-wrapper">
                         <img src="image/おみくじ.jpg" alt="おみくじ" class="item-img">
-                        <span class="room-badge badge-a">Aルーム</span>
                     </div>
                     <h4>おみくじ</h4>
                     <p class="item-price">100円</p>
@@ -460,7 +455,6 @@
                 <div class="item-card">
                     <div class="item-img-wrapper">
                         <img src="image/タロットカード.jpg" alt="タロットカード" class="item-img">
-                        <span class="room-badge badge-a">Aルーム</span>
                     </div>
                     <h4>タロットカード</h4>
                     <p class="item-price">???円</p>
@@ -476,11 +470,11 @@
                 <div class="item-card flex-row" id="event-minority">
                     <div class="item-img-wrapper">
                         <img src="image/少数派クイズ.png" alt="少数派クイズ" class="item-img">
-                        <span class="room-badge badge-b">Bルーム</span>
+                        <!-- バッジを削除 -->
                     </div>
-
                     <div class="event-info">
                         <h4>少数派クイズ</h4>
+                        <p class="item-place">場所：Bルーム</p> <!-- 場所テキストを追加 -->
                         <p>
                             4択から一番選ばれなさそうな
                             <br>一つを選ぼう！全問正解を目指せ！                        
@@ -491,11 +485,10 @@
                 <div class="item-card flex-row" id="event-logo">
                     <div class="item-img-wrapper">
                         <img src="image/ロゴクイズ.png" alt="重ね字クイズ" class="item-img">
-                        <span class="room-badge badge-a">Aルーム</span>
                     </div>
-
                     <div class="event-info">
                         <h4>ロゴクイズ</h4>
+                        <p class="item-place">場所：Aルーム</p>
                         <p>ロゴの一部からどの企業のロゴなのかを<br>当てるクイズ！
                             <br>
                             <br>第一部では「NSRロゴクイズ」、
@@ -511,11 +504,10 @@
                 <div class="item-card flex-row" id="event-kanji">
                      <div class="item-img-wrapper">
                         <img src="image/漢字クイズ.png" alt="漢字クイズ" class="item-img">
-                        <span class="room-badge badge-a">Aルーム</span>
                     </div>
-
                     <div class="event-info">
                         <h4>漢字クイズ</h4>
+                        <p class="item-place">場所：Aルーム</p>
                         <p>知識よりも連想力が問われる漢字クイズ！
                             <br>
                             <br>バラバラになった漢字のパーツから
@@ -529,24 +521,23 @@
 
                 <div class="item-card flex-row" id="event-game">
                     <div class="item-img-wrapper">
-                        <img src="image/スマブラ.png" alt="スマブラ" class="item-img">
-                        <span class="room-badge badge-c">Cルーム</span>
+                        <img src="image/コントローラー.jpg" alt="コントローラー" class="item-img">
                     </div>
-
                     <div class="event-info">
                         <h4>ゲーム大会</h4>
+                        <p class="item-place">場所：Cルーム</p>
                         <p>キャンフェスという舞台で繰り広げられる爽快バトル！決着の瞬間を見逃すな！</p>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOgdz9priH-M1XUUPMnmNjT9_aPjLEaSXg7uGiDDHxH0c-QA/viewform" target="_blank" rel="noopener noreferrer" class="smash-btn">エントリーする</a>
                     </div>
                 </div>
 
                 <div class="item-card flex-row" id="event-nazo">
                     <div class="item-img-wrapper">
                         <img src="image/なぞとき.png" alt="なぞとき" class="item-img">
-                        <span class="room-badge badge-b">Bルーム</span>
                     </div>
-
                     <div class="event-info">
                         <h4>なぞとき</h4>
+                        <p class="item-place">場所：Bルーム</p>
                         <p>大人も子どもも楽しめるなぞなぞに挑戦して、頭を動かそう！</p>
                     </div>
                 </div>
@@ -554,11 +545,10 @@
                 <div class="item-card flex-row" id="event-tetra">
                      <div class="item-img-wrapper">
                         <img src="image/クイズ・テトラ.png" alt="クイズ・テトラ" class="item-img">
-                        <span class="room-badge badge-a">Aルーム</span>
                     </div>
-
                     <div class="event-info">
                         <h4>クイズ・テトラ</h4>
+                        <p class="item-place">場所：Aルーム</p>
                         <p>前半には静岡キャンパスの
                             <br>メンターに関する問題を出題！
                             <br>後半では様々な分野から出題します。
@@ -573,11 +563,10 @@
                 <div class="item-card flex-row" id="event-intro">
                     <div class="item-img-wrapper">
                         <img src="image/イントロどん.png" alt="イントロどん" class="item-img">
-                        <span class="room-badge badge-b">Bルーム</span>
                     </div>
-
                     <div class="event-info">
                         <h4>イントロどん</h4>
+                        <p class="item-place">場所：Bルーム</p>
                         <p>
                             いろんなジャンルの曲を聴いて
                             <br>何の曲か当てよう！
