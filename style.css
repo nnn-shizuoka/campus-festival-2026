@@ -723,8 +723,7 @@ main {
     display: inline-block;
 }
 
-.game-details.is-open .details-summary::after,
-.game-details[open] .details-summary::after {
+.game-details.is-open .details-summary::after {
     transform: rotate(180deg);
 }
 
