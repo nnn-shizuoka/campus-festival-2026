@@ -380,6 +380,20 @@ main {
     box-shadow: 0 2px 4px rgba(217, 56, 58, 0.3);
 }
 
+/* 【Cルーム】バナー */
+.Croom-banner {
+    background-color: #4A5568;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 0.1em;
+    font-size: 1.1rem;
+}
+
 .part-title + .stage-banner {
     margin-top: 0;
 }
