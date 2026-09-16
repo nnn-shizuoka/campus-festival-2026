@@ -118,6 +118,36 @@ main {
     margin-bottom: 40px;
 }
 
+.hayaoshi-button-online {
+    background-color: #f4ecd8;
+    color: #4a3319;
+    border: 2px solid #C9A333;
+    border-radius: 15px;
+    padding:20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.hayaoshi-title {
+    font-size: 1.4rem;
+    margin: 0;
+}
+.hayaoshi-button {
+    background-color: #C9A333;
+    border: none;
+    border-radius: 15px;
+    margin-top: 18px;
+    padding: 10px 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.hayaoshi-button a {
+    color: #000000;
+    font-size: 16px;
+    text-decoration: none;
+}
+
 
 .section-title {
     text-align: center;
