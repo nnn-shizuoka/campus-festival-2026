@@ -827,10 +827,16 @@
         const MAX_SPARKLE_SIZE = 17; // 最大サイズ(px)
 
         // Canvasサイズ調整
+        let lastWidth = window.innerWidth;
+
         function resizeCanvas() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            generateSparkles();
+            // 横幅が変わった時（画面回転時等）のみ再生成し、縦スクロール時のUI出入りによるチラつきを防ぐ
+            if (window.innerWidth !== lastWidth || sparkles.length === 0) {
+                lastWidth = window.innerWidth;
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+                generateSparkles();
+            }
         }
 
         // キラキラの位置とサイズをランダム生成
