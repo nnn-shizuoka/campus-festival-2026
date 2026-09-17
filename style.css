@@ -275,6 +275,173 @@ main {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
+
+/* ==========================================
+   独自通貨「井上」案内ボックスのスタイル
+   ========================================== */
+.currency-box {
+    background: linear-gradient(135deg, #ffffff 0%, #fffdf0 100%);
+    border: 3px solid #C9A333;
+    border-radius: 20px;
+    padding: 22px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 16px rgba(201, 163, 51, 0.2);
+    text-align: center;
+}
+
+.currency-header {
+    margin-bottom: 15px;
+}
+
+.currency-badge {
+    background-color: #D9383A;
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-bottom: 6px;
+    letter-spacing: 0.05em;
+}
+
+.currency-header h3 {
+    margin: 0;
+    color: #004CA0;
+    font-size: 1.3rem;
+}
+
+/* 100円 ＝ 100井上のカード */
+.currency-rate-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.rate-card {
+    background-color: #f8f9fa;
+    border: 2px solid #DBDBDB;
+    border-radius: 15px;
+    padding: 10px 25px;
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+}
+
+.rate-card.highlight {
+    background-color: #f4ecd8;
+    border-color: #C9A333;
+    color: #004CA0;
+}
+
+.rate-num {
+    font-size: 2.2rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.rate-unit {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.rate-equal {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #C9A333;
+}
+
+/* 説明テキスト */
+.currency-desc {
+    font-size: 0.95rem;
+    color: #333333;
+    line-height: 1.6;
+    margin: 15px 0 20px 0;
+}
+
+.currency-desc strong {
+    color: #004CA0;
+    background: linear-gradient(transparent 60%, #fbe8a6 60%);
+}
+
+/* 3ステップ案内 */
+.currency-steps {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(201, 163, 51, 0.12);
+    border: 1px solid rgba(201, 163, 51, 0.3);
+    padding: 12px 15px;
+    border-radius: 15px;
+}
+
+.step-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step-num {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #C9A333;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+}
+
+.step-item p {
+    margin: 0;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #004CA0;
+}
+
+.step-arrow {
+    color: #C9A333;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* PCのみ改行 */
+.pc-only {
+    display: inline;
+}
+
+/* スマホ表示の最適化 */
+@media (max-width: 480px) {
+    .currency-rate-container {
+        gap: 8px;
+    }
+    
+    .rate-card {
+        padding: 8px 16px;
+    }
+    
+    .rate-num {
+        font-size: 1.7rem;
+    }
+
+    .currency-steps {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .step-arrow {
+        transform: rotate(90deg); /* 矢印を縦向きに変更 */
+        margin: -2px 0;
+    }
+
+    .pc-only {
+        display: none;
+    }
+}
+
+
 /* 3. スケジュール（テーブル） */
 /* ==========================================================================
    カード型タイムラインのスタイル（スケジュール用）
