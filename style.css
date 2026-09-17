@@ -1382,6 +1382,8 @@ main {
     border-radius: 15px;
     background-color: #000000;
     display: block;
+    position: relative;
+    z-index: 5;
 }
 
 /* スマホ表示の調整 */
